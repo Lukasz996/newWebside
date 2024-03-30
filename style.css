@@ -14,9 +14,15 @@ a {
 	text-decoration: none;
 }
 
-.firstLetter{
+.firstLetter {
 	max-width: 1400px;
 	margin: 0px auto;
+}
+.highlight {
+	font-weight: 500;
+	padding: 5px;
+	color: white;
+	background-color: rgb(31, 52, 92);
 }
 .header {
 	background-color: #e08787;
@@ -46,9 +52,6 @@ a {
 }
 .content ul {
 	background-color: rgb(0, 97, 97);
-	display: grid;
-	grid-auto-flow: column;
-	gap: 20px;
 	list-style-type: none;
 	padding: 0;
 }
@@ -56,14 +59,50 @@ a {
 	background-color: rgb(207, 207, 207);
 }
 
-.highlight {
-	font-weight: 500;
-	padding: 5px;
-	color: white;
-	background-color: rgb(31, 52, 92);
+.slider img {
+	width: 200px;
 }
 
-.bestSelery, img{
-	width: 200px;
-	
+.sale {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 36px;
+	margin-bottom: 20px;
 }
+.bestSellery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 50px;
+}
+
+.image-container img {
+	display: block;
+	width: 200px;
+	transition: all 0.7s ease;
+}
+
+.image-container img:hover {
+	/* transform: scale(1.1); */
+	filter: brightness(20%);
+}
+
+.image-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 20px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.image-grid img:hover + .image-text {
+	opacity: 1;
+}
+
