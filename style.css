@@ -8,6 +8,8 @@ body {
 	background-color: rgb(255, 255, 255);
 	height: 100vh;
 	width: 100vw;
+	max-width: 1400px;
+	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;
 }
 a {
@@ -190,4 +192,55 @@ a {
 	.text-card p {
 		font-size: 15px;
 	}
+}
+
+.secondLetter {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.maker {
+	border-bottom: 1px solid #1f345c;
+	padding: 10px;
+	text-align: center;
+}
+
+.maker-box {
+	max-width: 1400px;
+	margin: 15px;
+	padding: 15px;
+	/* border: 1px solid #e0dfdf; */
+}
+
+.maker-box h2 {
+	margin: 15px 0;
+	text-align: center;
+}
+
+.maker-box p {
+	font-weight: 500;
+	text-align: center;
+}
+
+.maker-box ul {
+	list-style-type: none;
+}
+
+.maker-box li {
+	padding: 10px 5px;
+}
+
+.maker-box li i {
+	margin-right: 10px;
+}
+
+.footer-contact {
+	max-width: 1400px;
+	margin: 0 auto;
 }
