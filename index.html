@@ -39,9 +39,18 @@
                 <p>692 832 194</p>
                 <a href="#">office@vogipoland.com</a>
             </div>
+            <div class="container-cart">
+                <h1>Koszyk </h1>
+                <div id="items-list">
+                    <!-- Tutaj będą wyświetlane elementy koszyka -->
+                </div>
+                <div id="total">
+                    <p>Suma: <span id="total-amount">0</span> zł</p>
+                </div>
+            </div>
         </div>
-       
-    <div class="main-nav">
+
+        <div class="main-nav">
             <a href="products.html">Produkty</a>
             <a href=" news.html">Nowości</a>
             <a href="3dmodels.html">Modele 3D</a>
@@ -73,7 +82,7 @@
                             </div>
                             <div class="drine-cost">
                                 <span class="price">1200 Pln</span>
-                                <button class="card-btn">Dodaj do koszyka</button>
+                                <div class="card-btn" onclick="addToCart('vogi', 600)">Dodaj do koszyka</div>
                             </div>
                         </div>
                     </div>
